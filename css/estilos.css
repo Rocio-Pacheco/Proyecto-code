@@ -177,25 +177,40 @@ main {
     }
   
  
-  
-  @media (max-width: 350px) {
-    .objetivo-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-    .objetivo-texto {
-        text-align: center;
-        max-width: 100%;
-       
-    }
-      .seccion-info > div {
-          flex-direction: column;
-          align-items: center;
-      }
-      .seccion-info > div > div {
-          max-width: 100%;
-      }
+ @media (max-width: 768px) {
+  .objetivo-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
   }
+  .objetivo-texto {
+    max-width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .hero {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 40px 10px;
+  }
+  .hero h1 {
+    font-size: 2.2em;
+    padding: 10px 0;
+  }
+  .hero p {
+    font-size: 1.2em;
+  }
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccion-info img {
+    width: 100px;
+    height: 100px;
+  }
+}
   
 .boton-inicio {
     position: fixed;
