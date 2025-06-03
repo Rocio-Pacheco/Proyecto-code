@@ -177,7 +177,30 @@ main {
     }
   
  
- @media (max-width: 768px) {
+ @media (max-width: 800px) {
+   nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1em;
+  }
   .objetivo-flex {
     flex-direction: column;
     align-items: center;
@@ -193,22 +216,36 @@ main {
     max-width: 100%;
     width: 100%;
     height: auto;
-    padding: 40px 10px;
+    padding: 20px 5px;
   }
   .hero h1 {
-    font-size: 2.2em;
-    padding: 10px 0;
+    font-size: 1.5em;
+    padding: 8px 0;
   }
   .hero p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .info-container {
     flex-direction: column;
     align-items: center;
   }
   .seccion-info img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+  }
+  .boton-inicio {
+    width: 100%;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: static;
+    padding: 8px;
+  }
+  .boton-inicio img {
+    width: 24px;
+    height: 24px;
   }
 }
   
@@ -241,10 +278,6 @@ main {
 footer {
     width: 100%;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     text-align: center;
     padding: 20px 0;
     background-color: #292929;
